@@ -1,0 +1,124 @@
+:root {
+    --color-prim-bg: #5ce4ca;
+    --color-sec: #fffaa4;
+    --color-peach: #ff7d7d;
+    --color-card-bg: #fffae9;
+    --color-text-header: #003d31;
+    --color-text-main: #596966;
+    --color-swipper: #979696e8;
+  }
+
+@media screen and  (max-width: 768px){
+    .nav_buttons{
+        
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .nav-lists{
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        height: 80vh;
+        width: 50%;
+        background-color: #fff;
+        margin-top: unset;
+        display: block;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in; 
+        /* display: none; */
+    }
+
+
+    .nav-lists li {
+        margin: 1.3rem 0;
+        padding: 2rem;
+        text-align: justify;
+    }
+    
+    .nav-lists li a{
+        cursor: pointer;
+    }
+    /* --- checkback for the links (unresponsive)  ---*/
+    .buttons{
+       display: none;
+    }
+    
+    .hero img{
+        opacity: 0;
+    }
+
+    .nav-lists.active{
+        display: block;
+        transform: translateX(0);
+    }
+
+
+}
+/* X, S8 max-width: 400px */
+/* Tablet  min: 769px, max: 1024px */
+
+@media screen and (min-width: 390px) and (max-width: 600px) {
+ .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-lists{
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        height: 80vh;
+        width: 50%;
+        background-color: #fff;
+        margin-top: unset;
+        display: block;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in; 
+        /* display: none; */
+    }
+
+    .nav-lists li {
+        margin: 1.3rem 0;
+        padding: 2rem;
+        text-align: justify;
+    }
+    .nav-lists li a{
+        cursor: pointer;
+    }
+    /* --- checkback for the links (unresponsive)  ---*/
+    .buttons{
+       display: none;
+    }
+    .hero img{
+        opacity: 0;
+    }
+    .nav-lists.active{
+        display: block;
+        transform: translateX(0);
+    }
+
+  
+}
