@@ -23,9 +23,6 @@ const slider = () =>{
         burger.classList.toggle('active');
     })
 
-    navitem.forEach((link, index) => {
-        console.log('index');
-    })
 }
 
 slider();
