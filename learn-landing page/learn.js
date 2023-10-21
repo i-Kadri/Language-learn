@@ -5,7 +5,7 @@
 //     hamBurger.classList.toggle('active');
 //     navLists.classList.toggle('active');
 // })
-// toggle active class to carryout its properties
+// toggle active class to execute its properties
 
 // document.querySelectorAll('.nav-item').forEach(n => n.addEventListener('click', () =>{
 //     hamBurger.classList.remove('active');

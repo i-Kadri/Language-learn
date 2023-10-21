@@ -27,6 +27,9 @@ a:visited{
   --color-text-main: #596966;
   --color-swipper: #979696e8;
 }
+p{
+  color: var(--color-text-header);
+}
 
 a {
   color: black;
@@ -109,7 +112,9 @@ header {
 header .container {
   /* width: fit-content; */
   background-image: url(../files/Bg\ map.png);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero {
@@ -496,11 +501,11 @@ aside{
 }
 
 .student-enroll{
-    width: 100%;
-    height: max-content;
-    margin: 0 auto;
-    /* background: var(--color-peach); */
-    padding: 4rem;
+  width: 100%;
+  height: max-content;
+  margin: 0 auto;
+  /* background: var(--color-peach); */
+  padding: 4rem;
 }
 
 .student-enroll img{
@@ -703,6 +708,7 @@ section .learning_div{
 .lang-options{
   margin-top: 10px;
 }
+
 .lang-options select {
   padding: 10px 12px;
   border: 1px solid none;
