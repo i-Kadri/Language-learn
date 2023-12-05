@@ -24,6 +24,10 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  nav{
+    
+  }
+/* 
   .nav-lists {
     position: absolute;
     right: 0;
@@ -35,7 +39,7 @@
     display: block;
     transform: translate(100%);
     transition: transform 0.5s ease-in;
-    /* display: none; */
+  
   }
 
   .nav-lists li {
@@ -47,19 +51,20 @@
   .nav-lists li a {
     cursor: pointer;
   }
-  /* --- checkback for the links (unresponsive)  ---*/
+  
   .buttons {
     display: none;
   }
 
   .hero img {
     opacity: 0;
+    display: none;
   }
 
   .nav-lists.active {
     display: block;
     transform: translateX(0);
-  }
+  } */
 }
 /* X, S8 max-width: 400px */
 /* Tablet  min: 769px, max: 1024px */
@@ -93,38 +98,43 @@
 
   .nav-lists {
     position: absolute;
-    right: 0;
-    top: 0vh; /*resize burgerMenu to header size */
+    right: -100%;
+    top: 0vh; 
     height: 75vh;
     width: 50%;
     background-color: var(--color-sec);
     margin-top: unset;
     display: block;
-    transform: translate(100%);
+    transform: translate(0);
     transition: transform 0.5s ease-in;
-    /* display: none;  */
-  }
+    display: none; 
+  } 
 
   .nav-lists li {
     margin: 1.3rem 0;
     padding: 1rem;
     text-align: justify;
   }
+
   .nav-lists li a {
     cursor: pointer;
   }
-  /* --- checkback for the links (unresponsive)  ---*/
+  
   .buttons {
     display: none;
   }
+
   .hero img {
     opacity: 0;
   }
-  .nav-lists.active {
+  
+  /* .nav-lists.active {
     display: block;
-    /* overflow-y: hidden; */
-    transform: translateX(0);
-  }
+    overflow-y: hidden; 
+    transform: translateX(100%);
+    right: 0;
+
+  } */
 
   /* ====HEADER==== */
   header {
@@ -135,54 +145,84 @@
 
   .hero-text {
     align-items: stretch;
+    padding-top: 0.2rem;
   }
+
   .hero img {
     opacity: 0;
   }
+
   .dialect h4,
   .lang-learn h4 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
+  .dialect{
+    padding: 5px 10px 5px 10px;
+  }
+
+  .lang-learn .lang{
+    padding: 5px 10px;
+  }
+ 
   .learn-content {
     width: 95%;
     margin: 2.5rem auto;
   }
 
   .learn-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    width: 95%;
+    margin: auto;
   }
+
+  .options select{
+    padding: 8px 10px;
+  }
+
+  .options button{
+    padding: 8px 10px;
+  }
+
   /* ====SECTION==== */
 
   .section-content {
     flex-direction: column;
   }
+
   .illustration {
     width: 90%;
     margin: auto;
     text-align: center;
   }
+
   .illustration img {
     width: 300px;
     margin: 0 auto 1rem 0;
     background-position: center;
   }
+
   .right-content {
     text-align: center;
-    width: 95%;
+    width: 100%;
     margin: auto;
   }
+
   .right-content h5 {
     line-height: 1.1;
     letter-spacing: -0.1rem;
     padding-bottom: 20px;
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: var(--color-text-header);
   }
+
   .right-content p {
-    width: 100%;
+    width: 95%;
     margin: auto;
+    font-size: .8rem;
   }
+
   .more-content {
     width: 100%;
   }
@@ -192,12 +232,15 @@
     /* padding: unset; */
     width: 98%;
   }
+
   .sub-head h1 {
     max-width: 98%;
-    font-size: 2.3rem;
+    width: 95%;
+    font-size: 2rem;
     line-height: 1.1;
     margin: 1.2rem auto 0 auto;
   }
+
   .categories {
     margin-bottom: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -220,50 +263,69 @@
 
   .dialect-plus {
     margin-bottom: 1rem;
+    width: 95%;
+    margin: auto;
   }
+
   .dialect-plus h1 {
     width: 95%;
     text-align: center;
     font-size: 2rem;
     line-height: 1.1;
   }
+
   .dialect-plus p {
     width: 95%;
     margin: 15px 0;
+    font-size: .8rem;
     text-align: center;
   }
+
+  .dialect-plus button{
+    padding: 5px 10px;
+  }
+
 
   .illustration-right {
     margin-top: 1rem;
   }
+
   .illustration-right img {
     width: 350px;
   }
 
   /* ===ASIDE=== */
 
-  aside {
+  aside * img {
+  
   }
+
   .container_ {
     width: 85%;
     margin: auto;
   }
+
   .lessons-tot {
     width: 90%;
     margin: auto;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.3rem;
   }
+
   .lessons-tot h2 {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
+
   .pple-dialect h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: -0.1rem;
   }
+
   .pple-dialect p {
-    width: 70%;
+    width: 95%;
+    font-size: .8rem;
+    margin: auto;
     text-align: center;
   }
 
@@ -272,12 +334,28 @@
     flex-direction: column;
     padding: 2rem 0 4rem;
   }
+
   .horizontal-line hr {
-    width: 200px;
+  width: 180px;
+  margin-top: -0.5rem;
+  }
+
+  .profile-info p {
+  font-size: .8rem;
+  }
+
+  .quote{
+  justify-content: center;
+  gap: 3rem;
+  }
+
+  .horizontal-line hr{
+    width: 150px;
   }
   .swipper {
     display: none;
   }
+
   .learning_div .container {
     flex-direction: column;
     text-align: center;
@@ -289,26 +367,37 @@
 
   .think_ span {
     width: 100%;
-    padding: 10px 15px 8px 10px;
+    padding: 5px 10px;
   }
+  
   .lang_ span {
     width: 100%;
-    padding: 10px 15px 8px 10px;
+    padding: 8px 10px;
   }
 
   .container .learn_right {
-    width: 95%;
+    width: 98%;
     margin: auto;
   }
+
   .learn_right p {
-    width: 95%;
+    width: 100%;
     font-size: 15px;
     line-height: 1.3;
     padding: 15px 0;
+    font-size: .8rem;
+  }
+
+  select#dropdown{
+    padding: 5px 10px;
+  }
+
+  .lang-options button{
+    padding: 5px 10px;
   }
 
   .bottom-text h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -323,24 +412,31 @@
   }
 
   .bottom .container {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
 
+  .dialect h4, .learn-more h4, .products h4, .support h4{
+    font-size: .4rem;
+  }
+
   .container .links {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    align-items: start;
     gap: 2rem;
     margin: unset;
-    padding: 10px 0;
+    padding: 0px 2rem;
     /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 95%;
     margin: auto; */
   }
+
   .links h4 {
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 13px;
   }
+
   .links a {
     font-size: 12px;
   }
@@ -366,4 +462,10 @@
   .lang-choices a {
     font-size: 12px;
   }
+}
+
+/* --- Larger screens */
+
+@media screen and (min-width: 790px) and (max-width: 1200px) {
+  
 }

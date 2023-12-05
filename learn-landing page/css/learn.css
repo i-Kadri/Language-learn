@@ -203,13 +203,13 @@ h4.learn {
 .options select {
   padding: 10px 12px;
   border: 1px solid none;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .options button {
   padding: 10px 12px;
   border: 1px solid none;
-  border-radius: 3px;
+  border-radius: 5px;
   background: var(--color-text-header);
   color: var(--color-card-bg);
 }
@@ -434,42 +434,42 @@ span.change {
 }
 
 .dialect-plus{
-    margin: 2rem 0;
-    width: 80%;
+  margin: 2rem 0;
+  width: 80%;
 }
 
 .dialect-plus h1{
-    color: var(--color-text-header);
-    font-size: 2.6rem;
-    font-weight: bold;
-    line-height: 1;
-    padding: 10px 0;
-    width: 80%;
-    letter-spacing: 0.8;
+  color: var(--color-text-header);
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 1;
+  padding: 10px 0;
+  width: 80%;
+  letter-spacing: 0.8;
 }
 
 .dialect-plus p{
-    line-height: 1.6;
-    margin: 15px 0;
-    width: 70%;
-    color: var(--color-text-main);
-    text-align: justify;
+  line-height: 1.6;
+  margin: 15px 0;
+  width: 70%;
+  color: var(--color-text-main);
+  text-align: justify;
 }
 
 .dialect-plus span{
-    color: var(--color-prim-bg);
+  color: var(--color-prim-bg);
 }
 
 .boost-learning button{
-    padding: 10px 15px;
-    background: var(--color-sec);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 0;
-    color: var(--color-text-header);
-    font-weight: bold;
-    transition: ease-in 0.1s;
+  padding: 10px 15px;
+  background: var(--color-sec);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  color: var(--color-text-header);
+  font-weight: bold;
+  transition: ease-in 0.1s;
 }
 
 .dialect-plus .btn{
@@ -557,7 +557,7 @@ img.lang1{
 
 .pple-dialect h2{
   font-size: 2.4rem;
-  font-weight:800;
+  font-weight: 800;
   line-height: 1.5;
   padding: 20px 0;
   color: var(--color-text-header);
@@ -747,7 +747,7 @@ section .learning_div{
   letter-spacing: -0.2rem
 }
 
-.bottom_text span{
+.bottom_text span{ 
   color: var(--color-prim-bg);
 } 
 
