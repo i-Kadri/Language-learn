@@ -12,6 +12,8 @@
 //     navLists.classList.remove('active');
 // }))
 
+
+// navigation menu for mobile screens
 const slider = () => {
   const burger = document.querySelector(".hamburger");
   const navlists = document.querySelector(".nav-lists");
@@ -23,7 +25,6 @@ const slider = () => {
 };
 
 slider();
-
 
 
 // const userRating = 90;
